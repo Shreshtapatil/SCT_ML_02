@@ -1,62 +1,69 @@
 # 📊 SCT_ML_02  
-### Internship Task 02 – Customer Segmentation using K-Means Clustering  
+### Internship Task 02 – K-Means Clustering for Retail Customer Segmentation  
 💼 SkillCraft Technology | 📅 July 2025
 
 ---
 
 ## 🧠 Project Overview
-This project is part of my internship at **SkillCraft Technology**, under **Task ID: SCT_ML_02**.  
-It aims to segment mall customers into distinct groups based on **Annual Income** and **Spending Score**, using the **K-Means Clustering algorithm**. This helps in understanding customer behavior for better marketing strategies.
+As part of my internship at **SkillCraft Technology**, Task ID **SCT_ML_02** involved implementing a **K-Means Clustering algorithm** to analyze and group **customers of a retail store** based on their **purchase behavior**.  
+The goal is to identify distinct customer segments that can help the business understand spending patterns and improve targeted marketing strategies.
 
 ---
 
 ## 🗂 Dataset
-The dataset used is `Mall_Customers.csv`, consisting of:
-- `CustomerID`: Unique identifier
-- `Genre`: Gender
-- `Age`: Age of customer
-- `Annual Income (k$)`: Income in thousands
-- `Spending Score (1-100)`: Score based on customer behavior
+The dataset used is `Mall_Customers.csv`, which includes the following features:
+
+- `CustomerID`: Unique customer identifier  
+- `Genre`: Gender  
+- `Age`: Age of the customer  
+- `Annual Income (k$)`: Customer’s yearly income  
+- `Spending Score (1-100)`: Score assigned based on purchasing behavior and habits
 
 ---
 
 ## 📚 Libraries Used
-- `pandas` – Data manipulation  
+- `pandas` – Data handling and analysis  
 - `numpy` – Numerical operations  
-- `matplotlib` – Plotting graphs  
-- `seaborn` – Data visualization  
-- `scikit-learn` – Machine learning (clustering, scaling)
+- `matplotlib` – Plotting static graphs  
+- `seaborn` – Enhanced data visualization  
+- `scikit-learn` – Machine learning (KMeans clustering, preprocessing)
 
 ---
 
 ## ⚙️ Methodology
-- Selected features: `Annual Income (k$)` and `Spending Score (1-100)`
-- Scaled data using `StandardScaler`
-- Determined optimal clusters using **Elbow Method**
-- Applied **KMeans clustering** with 5 clusters
-- Visualized customer segments
+
+- Loaded and cleaned the `Mall_Customers.csv` dataset
+- Chose relevant features: **Annual Income** and **Spending Score**
+- Scaled features using `StandardScaler` for better clustering performance
+- Used the **Elbow Method** to determine the optimal number of clusters
+- Applied **KMeans Clustering** (with 5 clusters)
+- Labeled and visualized segmented customer groups
 
 ---
 
 ## 📈 Visualizations
 
 ### 📌 Elbow Method  
-Used to determine the optimal number of clusters:  
-![elbow_plot png - Copy](https://github.com/user-attachments/assets/a9733b32-92d3-4c38-9ed8-2ed482c8fe34)
+Identifies the optimal number of clusters by plotting the Within-Cluster Sum of Squares (WCSS):  
+![Elbow Plot](https://github.com/user-attachments/assets/a9733b32-92d3-4c38-9ed8-2ed482c8fe34)
 
+---
 
 ### 📌 Customer Segmentation  
-Final clusters based on income and spending behavior:  
-![cluster_plot png](https://github.com/user-attachments/assets/25597601-3cae-4d99-a0ac-b01ec06bd62a)
-
+Clusters of customers based on spending behavior and income:  
+![Cluster Plot](https://github.com/user-attachments/assets/25597601-3cae-4d99-a0ac-b01ec06bd62a)
 
 ---
 
 ## ✅ Results Summary
-- Successfully segmented customers into **5 clusters**
-- Clear differentiation between high/low income and spending groups
-- Results saved to `clustered_customers.csv`
-- Visual insights support strategic marketing segmentation
+
+- Customers successfully grouped into **5 unique clusters**
+- Each segment reflects different combinations of income and spending behavior
+- Cluster insights can be used to:
+  - Target high-value customers
+  - Improve store layout and promotions
+  - Optimize customer relationship strategies
+- Clustered data exported to `clustered_customers.csv`
 
 ---
 
